@@ -3,7 +3,7 @@
 </p>
 <p align="center">
   <a target="_blank">
-    <img src="public\image.png" width="600" hight="500" />
+    <img src="public\image.png" width="800" hight="600" />
   </a>
 </p>
 ## Description
