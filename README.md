@@ -3,11 +3,9 @@
 </p>
 <p align="center">
   <a target="_blank">
-    <img src="public\image.png" width="100" alt="" />
+    <img src="public\image.png" width="600" hight="500" />
   </a>
 </p>
-
-![demo](public\image.png)
 ## Description
 
 Without a doubt a portfolio website is a unique way to showcase your work and let others know about yourself. It’s like an evergreen platform for your projects, case studies, and information about you. However, Why why did i choose Next.js? Because it is a React framework with Server-Side Rendering, which is good for SEO (Good for us if we get found on Google, right?).
