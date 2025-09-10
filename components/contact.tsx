@@ -32,14 +32,12 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:brahem.haytham@esprit.tn">
+        You can reach me at <a className="underline" href="mailto:brahem.haytham@esprit.tn">
           brahem.haytham@esprit.tn
-        </a>{" "}
-        or through this form.
+        </a> or call <span className="font-medium">+216 58 101 754</span>. Connect on <a className="underline" href="https://github.com/haythambrahem" target="_blank">GitHub</a> or <a className="underline" href="https://www.linkedin.com/in/brahem-haytham/" target="_blank">LinkedIn</a>, or use the form below.
       </p>
 
-      <form
+        <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);

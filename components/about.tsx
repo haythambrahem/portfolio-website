@@ -20,36 +20,24 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
 
       <p className="mb-3">
-        I am an aspiring <span className="font-medium">IT engineer</span>{" "}
-        specializing in{" "}
-        <span className="font-medium">software development</span> and{" "}
-        <span className="font-medium">DevOps</span>. With hands-on experience in
-        cutting-edge technologies like{" "}
-        <span className="font-medium">Spring Boot</span>,{" "}
-        <span className="font-medium">Angular</span>,{" "}
-        <span className="font-medium">Node.js</span>,{" "}
-        <span className="font-medium">Next.js</span>,{" "}
-        <span className="font-medium">Docker</span>, and{" "}
-        <span className="font-medium">Kubernetes</span>, I thrive in creating
-        innovative solutions that optimize development processes and ensure
-        scalable, robust applications.
+        Software Engineer and DevOps focused on delivering scalable enterprise solutions. Proven track record in designing secure, high-performance systems for banking and public-sector clients. Adept at bridging technical excellence with business needs through:
+      </p>
+      <ul className="mb-3 text-left list-disc ml-6">
+        <li>
+          <span className="font-medium">Enterprise Integration:</span> Payment gateways, ERP systems, legacy modernization.
+        </li>
+        <li>
+          <span className="font-medium">Full-Cycle Development:</span> Agile-driven projects from concept to cloud deployment.
+        </li>
+        <li>
+          <span className="font-medium">Cross-Functional Collaboration:</span> Aligning with stakeholders to meet compliance and scalability goals.
+        </li>
+      </ul>
+      <p>
+        I am passionate about learning new technologies and solving complex challenges. I thrive in collaborative environments and continuously seek opportunities to grow and contribute to impactful projects.
       </p>
       <p>
-        I am deeply passionate about learning new technologies and solving
-        complex challenges. Currently, I am seeking a{" "}
-        <span className="font-medium">6-month end-of-studies internship</span>{" "}
-        to further apply my skills in{" "}
-        <span className="font-medium">software development</span> and{" "}
-        <span className="font-medium">DevOps</span>, contribute to impactful
-        projects, and continue growing as a professional in the tech industry.
-      </p>
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">Outside tech</span>, I enjoy fitness, basketball, chess, and exploring topics in history and philosophy.
       </p>
     </motion.section>
   );
