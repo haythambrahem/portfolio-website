@@ -91,13 +91,22 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv_Haytham-BRAHEM_fr.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+  className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+  href="/CV_Haytham_BRAHEM_FR_.pdf"
+  download
+>
+  CV (FR){" "}
+  <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+</a>
+
+<a
+  className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+  href="/CV_Haytham_Brahem_EN.pdf"
+  download
+>
+  CV (EN){" "}
+  <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+</a>
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
