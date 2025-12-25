@@ -6,13 +6,14 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+
 export const links = [
   {
     name: "Home",
     hash: "#home",
   },
   {
-    name: "About",
+    name:  "About",
     hash: "#about",
   },
   {
@@ -35,51 +36,59 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Engineering Student",
-    location: "ESPRIT, Tunisia",
-    description:
-      "I'm pursuing my Engineering degree in Computer Science, focusing on software development and DevOps practices.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022 - 2025",
+    title: "Full Stack Engineer - Final Year Project",
+    location: "BNA - Banque Nationale Agricole, Tunis",
+    description: 
+      "Developed a complete legal case management platform serving 50+ users with Spring Boot (Java 17) and Angular 19. Implemented 9 critical business modules including real-time tracking, guarantees, and intelligent mission assignment.  Built RBAC workflow system reducing processing time by 40%.  Integrated Spring Security with JWT authentication and achieved 85% code coverage.",
+    icon: React.createElement(CgWorkAlt),
+    date: "February 2025 - August 2025",
   },
   {
-    title: "Software Engineering Intern",
+    title:  "Full Stack Developer Intern",
     location: "SNDP, AGIL Energy - Tunis",
     description:
-      "Developed a web application for lubricant distributor management using Spring and Angular. Implemented JWT authentication and used MySQL with Swagger for API testing. Applied SCRUM methodology for efficient project delivery.",
+      "Developed a lubricant distributor management web application with Spring Boot and Angular, improving operational efficiency by 35%. Implemented secure JWT authentication with refresh tokens and role-based access control. Designed and normalized MySQL database with 15+ optimized tables. Created 30+ RESTful API endpoints documented with Swagger. Applied SCRUM methodology with 2-week sprints.",
     icon: React.createElement(CgWorkAlt),
     date: "July 2024 - September 2024",
   },
   {
-    title: "Web Development Intern",
-    location: "Esprit University - Remote",
+    title: "Full Stack Web Developer Intern",
+    location:  "ESPRIT - Remote",
     description:
-      "Developed an international mobility application using Spring and Angular. Implemented JWT authentication and optimized user management. Used MySQL, Postman, and Swagger for data management and API testing.",
+      "Developed an international mobility platform with Spring Boot and Angular for 200+ users (students and administrators). Integrated JWT for secure authentication with granular access control.  Optimized SQL queries with pagination and lazy loading, reducing loading time by 50%. Implemented validation on both client (Angular Reactive Forms) and server (Spring Validation) sides.",
     icon: React.createElement(CgWorkAlt),
     date: "July 2024 - August 2024",
+  },
+  {
+    title: "Engineering Degree in Computer Science",
+    location: "ESPRIT, El Ghazala, Ariana",
+    description:
+      "Pursuing Engineering degree in Software Development at ESPRIT.  Specialized in Full Stack Development, Spring Boot, Angular, and DevOps practices. Expected graduation: December 2025.",
+    icon: React.createElement(LuGraduationCap),
+    date: "September 2022 - December 2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "DevOps CI/CD Pipeline Automation",
-    description:
-      "Implemented a comprehensive DevOps solution using Docker, Kubernetes, Jenkins, and various tools for automated deployment and security scanning.",
-    tags: ["Jenkins", "Docker", "Kubernetes", "SonarQube", "Trivy", "Nexus"],
+    title: "Legal Case Management Platform",
+    description: 
+      "Full-stack platform for BNA with 9 business modules:  Cases, Real-time tracking, Guarantees, Pledges, Surety bonds, Assets, Service providers, Missions and Automatic assignments. Features RBAC workflow, dynamic analytics dashboard with real-time KPIs, and intelligent mission assignment based on availability and expertise.  RESTful API with 50+ endpoints and Swagger documentation.",
+    tags: ["Spring Boot", "Angular 19", "Java 17", "MySQL", "JWT", "Spring Security", "Swagger"],
     imageUrl: corpcommentImg,
   },
   {
     title: "ERP Resource Management Solution",
     description:
-      "Designed and developed an enterprise resource planning solution using Spring Boot and Angular, implementing efficient resource management processes.",
-    tags: ["Spring Boot", "Angular", "TypeScript", "Java", "GitHub"],
+      "Complete ERP solution with microservices architecture (8 independent services). Modules: HR Management (leave, absences), Accounting, Inventory, CRM with Angular Material and responsive design. RESTful APIs with Spring Boot, JWT security, API Gateway and Service Discovery (Eureka). Applied Agile methodology with Git (GitFlow). Integrated unit tests (JUnit 5, Mockito, Jasmine, Karma) with 80% code coverage.",
+    tags: ["Spring Boot", "Angular", "TypeScript", "MySQL", "JWT", "Docker", "Microservices", "Eureka"],
     imageUrl: rmtdevImg,
   },
   {
     title: "TunEvent - Event Management Platform",
     description:
-      "Developed an event management application initially in Java, later converted to Symfony, featuring intuitive user interface and comprehensive event management capabilities.",
-    tags: ["Java", "PHP", "Symfony", "SceneBuilder", "GitHub"],
+      "Event management platform initially developed in Java (JavaFX) then migrated to Symfony. Features: Online booking, Secure payment (Stripe), QR Code ticket management, and rating system. Real-time notifications (WebSockets), automated emails (Mailer) and SMS confirmations. Intuitive UI with SceneBuilder (desktop) and responsive Twig templates (web).",
+    tags: ["Java", "PHP", "Symfony", "JavaFX", "MySQL", "Stripe", "WebSockets", "Twig"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -87,42 +96,66 @@ export const projectsData = [
 export const skillsData = [
   // Programming Languages
   "Java",
+  "TypeScript",
+  "JavaScript",
   "PHP",
   "Python",
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
   
-  // Web Technologies
+  // Backend Frameworks
   "Spring Boot",
+  "Spring Security",
+  "Spring Data JPA",
+  "Hibernate",
+  "Symfony",
+  
+  // Frontend Frameworks
   "Angular",
   "React",
   "Next.js",
-  "Node.js",
+  "RxJS",
+  "NgRx",
+  
+  // Web Technologies
   "HTML5",
   "CSS3",
+  "SASS",
+  "Bootstrap",
+  "Tailwind CSS",
   
   // Databases
   "MySQL",
   "PostgreSQL",
   "MongoDB",
   
-  // Cloud & DevOps
+  // APIs & Integration
+  "RESTful APIs",
+  "GraphQL",
+  "Swagger",
+  "Postman",
+  "JWT",
+  
+  // DevOps & CI/CD
+  "Docker",
+  "Kubernetes",
+  "Git",
+  "GitHub",
+  "Jenkins",
+  "Maven",
+  "SonarQube",
+  
+  // Cloud Platforms
   "AWS",
   "Azure",
   "Google Cloud",
-  "Docker",
-  "Kubernetes",
-  "Jenkins",
-  "Git",
-  "GitHub",
-  "Nexus",
-  "Maven",
-  "SonarQube",
-  "Trivy",
-  "GraphQL",
-  "Express",
-  "Python",
+  
+  // Testing
+  "JUnit",
+  "Mockito",
+  "Jasmine",
+  "Karma",
+  
+  // Methodologies
+  "Agile",
+  "Scrum",
+  "TDD",
 ] as const;

@@ -31,11 +31,11 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/HBIMG.jpg"
+              src="/PP-Haytham.jpg"
               alt="Haytham portrait"
-              width="192"
-              height="192"
-              quality="95"
+              width="200"
+              height="200"
+              quality="100"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
@@ -62,11 +62,12 @@ export default function Intro() {
   initial={{ opacity: 0, y: 100 }}
   animate={{ opacity: 1, y: 0 }}
 >
-  <span className="font-bold">Hello, I'm Haytham Brahem.</span> I'm an{" "}
-  <span className="font-bold">engineering student</span> specializing in{" "}
-  <span className="font-bold">software development</span>. I enjoy solving{" "}
-  <span className="italic">complex problems</span> and building{" "}
-  <span className="italic">modern applications</span>.
+  <span className="font-bold">Hello, I'm Haytham Brahem.</span> I'm a{" "}
+  <span className="font-bold">Full Stack Engineer</span> specializing in{" "}
+  <span className="font-bold">Spring Boot & Angular</span>. I build{" "}
+  <span className="italic">scalable web applications</span> with{" "}
+  <span className="italic">microservices architecture</span> and secure{" "}
+  <span className="underline">enterprise solutions</span>.
 </motion.h1>
 
 
@@ -92,7 +93,7 @@ export default function Intro() {
 
         <a
   className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-  href="/CV_Haytham_BRAHEM_FR_.pdf"
+  href="/Haytham_Brahem_Full_Stack_Developer_FR_2025.pdf"
   download
 >
   CV (FR){" "}
@@ -101,7 +102,7 @@ export default function Intro() {
 
 <a
   className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-  href="/CV_Haytham_Brahem_EN.pdf"
+  href="/Haytham_Brahem_Full_Stack_Developer_EN_2025.pdf"
   download
 >
   CV (EN){" "}
