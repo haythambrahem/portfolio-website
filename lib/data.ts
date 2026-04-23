@@ -66,6 +66,7 @@ export const projectsData = [
       "🏛️ Enterprise platform for BNA bank with 9 business modules: Cases, tracking, guarantees, pledges, surety bonds, assets, providers, missions & auto-assignments. Features: REST API with Swagger, JWT auth, real-time sync, audit logging. Serves 50+ concurrent users.",
     tags: ["Spring Boot", "Angular 19", "Java 17", "MySQL", "JWT", "Spring Security", "Swagger"],
     imageUrl: rmtdevImg,
+    github: "",
     category: "Enterprise",
   },
   {
@@ -92,6 +93,7 @@ export const projectsData = [
       "⚙️ Complete ERP with microservices architecture (8 services). Modules: HR Management, Accounting, Inventory, CRM. Features: Angular Material UI, real-time sync, JWT auth, Docker containerization, Eureka service discovery, SOLID principles & clean architecture.",
     tags: ["Spring Boot", "Angular", "TypeScript", "MySQL", "Docker", "Microservices", "Eureka"],
     imageUrl: rmtdevImg,
+    github: "",
     category: "ERP",
   },
   {
@@ -100,6 +102,7 @@ export const projectsData = [
       "🎭 Event platform with online booking, Stripe payments, QR code tickets, ratings & analytics. Developed in Java (JavaFX) then migrated to Symfony. Features: real-time notifications via WebSockets, responsive mobile-first design, comprehensive search.",
     tags: ["Java", "PHP", "Symfony", "MySQL", "Stripe", "WebSockets"],
     imageUrl: wordanalyticsImg,
+    github: "",
     category: "Events",
   },
 ] as const;
