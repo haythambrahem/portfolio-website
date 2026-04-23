@@ -6,32 +6,13 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
-
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name:  "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Experience", hash: "#experience" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
 export const experiencesData = [
@@ -39,23 +20,23 @@ export const experiencesData = [
     title: "Full Stack Engineer - Final Year Project",
     location: "BNA - Banque Nationale Agricole, Tunis",
     description: 
-      "Developed a complete legal case management platform serving 50+ users with Spring Boot (Java 17) and Angular 19. Implemented 9 critical business modules including real-time tracking, guarantees, and intelligent mission assignment.  Built RBAC workflow system reducing processing time by 40%.  Integrated Spring Security with JWT authentication and achieved 85% code coverage.",
+      "Developed a complete legal case management platform serving 50+ users with Spring Boot (Java 17) and Angular 19. Implemented 9 critical business modules including real-time tracking, guarantees, pledges, surety bonds, assets, service providers, missions and automatic assignments. Features REST API with Swagger documentation, JWT authentication, and MySQL database.",
     icon: React.createElement(CgWorkAlt),
     date: "February 2025 - August 2025",
   },
   {
-    title:  "Full Stack Developer Intern",
+    title: "Full Stack Developer Intern",
     location: "SNDP, AGIL Energy - Tunis",
     description:
-      "Developed a lubricant distributor management web application with Spring Boot and Angular, improving operational efficiency by 35%. Implemented secure JWT authentication with refresh tokens and role-based access control. Designed and normalized MySQL database with 15+ optimized tables. Created 30+ RESTful API endpoints documented with Swagger. Applied SCRUM methodology with 2-week sprints.",
+      "Developed a lubricant distributor management web application with Spring Boot and Angular, improving operational efficiency by 35%. Implemented secure JWT authentication with refresh tokens and role-based access control.",
     icon: React.createElement(CgWorkAlt),
     date: "July 2024 - September 2024",
   },
   {
     title: "Full Stack Web Developer Intern",
-    location:  "ESPRIT - Remote",
+    location: "ESPRIT - Remote",
     description:
-      "Developed an international mobility platform with Spring Boot and Angular for 200+ users (students and administrators). Integrated JWT for secure authentication with granular access control.  Optimized SQL queries with pagination and lazy loading, reducing loading time by 50%. Implemented validation on both client (Angular Reactive Forms) and server (Spring Validation) sides.",
+      "Developed an international mobility platform with Spring Boot and Angular for 200+ users (students and administrators). Integrated JWT for secure authentication with granular access control and implemented complex business logic for student mobility management.",
     icon: React.createElement(CgWorkAlt),
     date: "July 2024 - August 2024",
   },
@@ -63,7 +44,7 @@ export const experiencesData = [
     title: "Engineering Degree in Computer Science",
     location: "ESPRIT, El Ghazala, Ariana",
     description:
-      "Pursuing Engineering degree in Software Development at ESPRIT.  Specialized in Full Stack Development, Spring Boot, Angular, and DevOps practices. Expected graduation: December 2025.",
+      "Pursuing Engineering degree in Software Development at ESPRIT. Specialized in Full Stack Development, Spring Boot, Angular, and DevOps practices. Expected graduation: December 2025.",
     icon: React.createElement(LuGraduationCap),
     date: "September 2022 - December 2025",
   },
@@ -71,25 +52,55 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Job-Agent SaaS Platform",
+    description: 
+      "🚀 Production-grade multi-tenant SaaS for automated job applications. Features: NextAuth authentication, Stripe subscription management, AI-powered job scraping & matching, plan-based feature gating (free tier: 10/month), Redis caching, email notifications. Monorepo with Express API & Next.js frontend.",
+    tags: ["Next.js", "Express", "Prisma", "PostgreSQL", "Stripe", "Redis", "Monorepo"],
+    imageUrl: corpcommentImg,
+    github: "https://github.com/haythambrahem/Job-Agent",
+    category: "SaaS",
+  },
+  {
     title: "Legal Case Management Platform",
     description: 
-      "Full-stack platform for BNA with 9 business modules:  Cases, Real-time tracking, Guarantees, Pledges, Surety bonds, Assets, Service providers, Missions and Automatic assignments. Features RBAC workflow, dynamic analytics dashboard with real-time KPIs, and intelligent mission assignment based on availability and expertise.  RESTful API with 50+ endpoints and Swagger documentation.",
+      "🏛️ Enterprise platform for BNA bank with 9 business modules: Cases, tracking, guarantees, pledges, surety bonds, assets, providers, missions & auto-assignments. Features: REST API with Swagger, JWT auth, real-time sync, audit logging. Serves 50+ concurrent users.",
     tags: ["Spring Boot", "Angular 19", "Java 17", "MySQL", "JWT", "Spring Security", "Swagger"],
+    imageUrl: rmtdevImg,
+    category: "Enterprise",
+  },
+  {
+    title: "E-Commerce Web Platform",
+    description:
+      "🛒 Full-stack e-commerce with Angular frontend & Spring Boot backend. Features: User authentication, advanced product filtering, shopping cart, checkout workflow, order tracking, comprehensive admin panel, payment gateway integration & inventory management.",
+    tags: ["Angular", "Spring Boot", "TypeScript", "MySQL", "JWT", "Bootstrap"],
+    imageUrl: wordanalyticsImg,
+    github: "https://github.com/haythambrahem/E-commerce-web",
+    category: "E-Commerce",
+  },
+  {
+    title: "AngularQuest - Gamified Learning",
+    description:
+      "🎮 Interactive gamified learning platform for Angular mastery. Features: Monaco Editor for live coding, real-time feedback, progress tracking with Chart.js, Spring Boot backend, JWT auth, PostgreSQL, Docker containerization. Learn Angular like Duolingo!",
+    tags: ["Angular 18+", "Spring Boot 3.2+", "PostgreSQL", "TypeScript", "Docker", "Monaco Editor"],
     imageUrl: corpcommentImg,
+    github: "https://github.com/haythambrahem/AngularQuest",
+    category: "Learning",
   },
   {
     title: "ERP Resource Management Solution",
     description:
-      "Complete ERP solution with microservices architecture (8 independent services). Modules: HR Management (leave, absences), Accounting, Inventory, CRM with Angular Material and responsive design. RESTful APIs with Spring Boot, JWT security, API Gateway and Service Discovery (Eureka). Applied Agile methodology with Git (GitFlow). Integrated unit tests (JUnit 5, Mockito, Jasmine, Karma) with 80% code coverage.",
-    tags: ["Spring Boot", "Angular", "TypeScript", "MySQL", "JWT", "Docker", "Microservices", "Eureka"],
+      "⚙️ Complete ERP with microservices architecture (8 services). Modules: HR Management, Accounting, Inventory, CRM. Features: Angular Material UI, real-time sync, JWT auth, Docker containerization, Eureka service discovery, SOLID principles & clean architecture.",
+    tags: ["Spring Boot", "Angular", "TypeScript", "MySQL", "Docker", "Microservices", "Eureka"],
     imageUrl: rmtdevImg,
+    category: "ERP",
   },
   {
-    title: "TunEvent - Event Management Platform",
+    title: "TunEvent - Event Management",
     description:
-      "Event management platform initially developed in Java (JavaFX) then migrated to Symfony. Features: Online booking, Secure payment (Stripe), QR Code ticket management, and rating system. Real-time notifications (WebSockets), automated emails (Mailer) and SMS confirmations. Intuitive UI with SceneBuilder (desktop) and responsive Twig templates (web).",
-    tags: ["Java", "PHP", "Symfony", "JavaFX", "MySQL", "Stripe", "WebSockets", "Twig"],
+      "🎭 Event platform with online booking, Stripe payments, QR code tickets, ratings & analytics. Developed in Java (JavaFX) then migrated to Symfony. Features: real-time notifications via WebSockets, responsive mobile-first design, comprehensive search.",
+    tags: ["Java", "PHP", "Symfony", "MySQL", "Stripe", "WebSockets"],
     imageUrl: wordanalyticsImg,
+    category: "Events",
   },
 ] as const;
 
@@ -107,6 +118,7 @@ export const skillsData = [
   "Spring Data JPA",
   "Hibernate",
   "Symfony",
+  "Express.js",
   
   // Frontend Frameworks
   "Angular",
@@ -133,6 +145,7 @@ export const skillsData = [
   "Swagger",
   "Postman",
   "JWT",
+  "Stripe",
   
   // DevOps & CI/CD
   "Docker",
