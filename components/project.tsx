@@ -14,8 +14,10 @@ export default function Project({
   tags,
   imageUrl,
   github,
+  demo,
   category,
 }: ProjectProps) {
+  const hasImage = Boolean(imageUrl);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -33,8 +35,12 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 max-w-[42rem] border-2 border-transparent bg-clip-padding rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gradient-to-br hover:from-gray-100 hover:to-gray-200 dark:hover:from-gray-800 dark:hover:to-gray-700 transition-all duration-300 sm:group-even:pl-8 dark:text-white shadow-lg hover:shadow-2xl hover:border-blue-400/30 dark:hover:border-blue-500/30">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className={`bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 max-w-[42rem] border-2 border-transparent bg-clip-padding rounded-lg overflow-hidden sm:pr-8 relative ${hasImage ? "sm:min-h-[20rem]" : ""} hover:bg-gradient-to-br hover:from-gray-100 hover:to-gray-200 dark:hover:from-gray-800 dark:hover:to-gray-700 transition-all duration-300 sm:group-even:pl-8 dark:text-white shadow-lg hover:shadow-2xl hover:border-blue-400/30 dark:hover:border-blue-500/30`}>
+        <div
+          className={`pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 flex flex-col h-full ${
+            hasImage ? "sm:max-w-[50%] sm:group-even:ml-[18rem]" : "sm:pb-10"
+          }`}
+        >
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
               {title}
@@ -62,13 +68,17 @@ export default function Project({
                 Code
               </a>
             )}
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-full transition-all duration-200 hover:scale-105"
-            >
-              <FaExternalLinkAlt className="w-4 h-4" />
-              Demo
-            </a>
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-full transition-all duration-200 hover:scale-105"
+              >
+                <FaExternalLinkAlt className="w-4 h-4" />
+                Demo
+              </a>
+            )}
           </div>
 
           <ul className="flex flex-wrap gap-2 mt-3">
@@ -83,6 +93,7 @@ export default function Project({
           </ul>
         </div>
 
+        {imageUrl && (
         <Image
           src={imageUrl}
           alt={title}
@@ -100,6 +111,7 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
+        )}
       </section>
     </motion.div>
   );
